@@ -1,0 +1,592 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+body{
+    background-color: #0a1628;
+    color: #f8f9fa;
+}
+
+.main{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #0a1628, #073763);
+    display: flex;
+    flex-direction: column;
+}
+
+#navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background: #0a1628;
+}
+
+.navbar{
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    flex-wrap: wrap;
+    padding: 15px 0;
+}
+
+.icon .logo{
+    color: #ffd166;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+.menu ul{
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.menu li{
+    list-style: none;
+}
+
+.menu ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.menu ul li a:hover{
+    color: #ffd166;
+}
+
+.search{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.srch{
+    width: 150px;
+    height: 40px;
+    background: transparent;
+    border: 1px solid #06d6a0;
+    color: white;
+    padding: 0 10px;
+    border-radius: 5px 0 0 5px;
+}
+
+.btn{
+    width: 70px;
+    height: 40px;
+    background: #06d6a0;
+    font-weight: bold;
+    border: 1px solid #06d6a0;
+    border-radius: 0 50px 5px 0;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn:hover{
+    background: linear-gradient(90deg, #06d6a0, #ef476f);
+    color: white;
+}
+
+.hamburger{
+    display: none;
+    cursor: pointer;
+    font-size: 30px;
+}
+
+.hamburger i{
+    color: #ffd166;
+}
+
+/* HERO */
+.content{
+    width: 90%;
+    max-width: 1200px;
+    margin: 50px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    color: #f8f9fa;
+    padding-top: 90px;
+}
+
+.text-section{
+    flex: 1;
+    min-width: 280px;
+    padding: 20px;
+}
+
+.text-section h1{
+    font-size: 50px;
+    line-height: 1.2;
+}
+
+.text-section h1 span{
+    color: #ffd166;
+}
+
+.text-section h1 .sub{
+    color: #a8edda;
+    font-size: 35px;
+}
+
+.par{
+    margin: 20px 0;
+    line-height: 1.5;
+}
+
+.cn{
+    background-color: #06d6a0;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.cn:hover{
+    background: linear-gradient(90deg, #a8edda, #ef476f);
+}
+
+#blog {
+  background-color: #073763;
+  padding: 20px 0;
+}
+
+.blog-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.blog-card {
+    background: rgba(255,255,255,0.05);
+    border-left: 5px solid #ffd166;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+    transition: 0.3s;
+}
+
+/* Botón Dorado para enlaces dentro de las tarjetas de Blog */
+.blog-card a {
+    display: inline-block;
+    background-color: #ffd166; /* Color dorado primario */
+    color: #0a1628;             /* Texto azul oscuro para gran contraste */
+    font-weight: bold;
+    padding: 10px 18px;
+    border-radius: 8px;
+    text-decoration: none;
+    margin-top: 15px;
+    transition: all 0.3s ease;
+    border: 2px solid #ffd166;
+}
+
+/* Efecto al pasar el cursor o hacer clic */
+.blog-card a:hover {
+    background-color: transparent; /* Se vuelve transparente */
+    color: #ffd166;                /* Texto en dorado */
+    transform: translateY(-2px);   /* Se eleva sutilmente */
+    box-shadow: 0 4px 12px rgba(255, 209, 102, 0.3); /* Resplandor dorado */
+}
+
+.blog-card a:active {
+    transform: translateY(0);      /* Vuelve a su lugar al hacer clic */
+}
+
+.autor {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+
+.autor-nombre {
+    font-weight: bold;
+    color: #ffd166;
+    font-size: 0.9em;
+    margin: 0;
+}
+
+.autor-foto {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #06d6a0;
+}
+
+.autor-fecha {
+    font-size: 0.8em;
+    color: #999;
+    margin: 0;
+}
+
+/* ESPECIALIDADES */
+section{
+    padding: 60px 20px;
+}
+
+.container{
+    max-width: 1200px;
+    margin: auto;
+}
+
+.title-center{
+    text-align: center;
+    font-size: 35px;
+    color: #ffd166;
+    margin-bottom: 40px;
+}
+
+.container-cards{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.container-card{
+    background: rgba(255,255,255,0.05);
+    border: 1px solid #ffd166;
+    border-radius: 15px;
+    padding: 30px;
+    text-align: center;
+    max-width: 300px;
+    transition: 0.3s;
+}
+
+.container-card:hover{
+    background: rgba(255,209,102,0.1);
+    transform: translateY(-5px);
+}
+
+.icon-circle{
+    font-size: 40px;
+    color: #06d6a0;
+    margin-bottom: 15px;
+}
+
+/* PROYECTOS */
+.links{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}
+
+.link-card{
+    background: rgba(255,255,255,0.05);
+    border: 1px solid #06d6a0;
+    border-radius: 10px;
+    padding: 15px 25px;
+    text-decoration: none;
+    color: #f8f9fa;
+    transition: 0.3s;
+    font-weight: bold;
+}
+
+.link-card:hover{
+    background: #06d6a0;
+    color: #0a1628;
+}
+
+/* CONTACTO */
+.social-grid{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.link-social{
+    background: #073763;
+    border: 1px solid #ffd166;
+    border-radius: 10px;
+    padding: 15px 30px;
+    text-decoration: none;
+    color: #ffd166;
+    font-size: 18px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.link-social:hover{
+    background: #ffd166;
+    color: #0a1628;
+}
+
+/* FOOTER */
+footer{
+    background: #050d1a;
+    text-align: center;
+    padding: 20px;
+    color: #a8edda;
+    margin-top: 40px;
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 768px){
+    .icon .logo{
+        font-size: 20px;
+    }
+
+    .navbar{
+        padding: 15px 10px;
+        width: 95%;
+    }
+
+    .menu ul{
+        display: none;
+        flex-direction: column;
+        background-color: rgba(0,0,0,0.95);
+        position: absolute;
+        top: 70px;
+        right: 0;
+        width: 90%;
+        max-width: 300px;
+        padding: 20px;
+        border-radius: 10px;
+        gap: 15px;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+        z-index: 100;
+    }
+
+    .menu ul.active{
+        display: flex;
+    }
+
+    .menu ul li{
+        text-align: center;
+    }
+
+    .menu ul li a{
+        font-size: 18px;
+        padding: 10px 0;
+        display: block;
+    }
+
+    .hamburger{
+        display: block;
+        position: absolute;
+        right: 10px;
+        top: 20px;
+    }
+
+    .search{
+        width: 100%;
+        order: 3;
+        margin-top: 10px;
+    }
+
+    .srch{
+        width: 70%;
+    }
+
+    .btn{
+        width: 28%;
+    }
+
+    .text-section h1{
+        font-size: 30px;
+    }
+
+    .text-section h1 .sub{
+        font-size: 22px;
+    }
+
+    .content{
+        margin: 20px auto;
+    }
+
+    .container-card{
+        max-width: 100%;
+    }
+
+    .link-card{
+        width: 100%;
+        text-align: center;
+    }
+
+    .link-social{
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px){
+    .text-section h1{
+        font-size: 24px;
+    }
+
+    .text-section h1 .sub{
+        font-size: 18px;
+    }
+
+    .title-center{
+        font-size: 24px;
+    }
+}
+
+.card-wrapper {
+    position: relative;
+    padding-top: 15px;
+}
+
+.badge {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background-color: #06d6a0;
+    color: #0a1628;
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.blog-img {
+    max-width: 120px;
+    height: auto;
+    display: block;
+    margin: 15px 0;
+    border-radius: 6px;
+}
+
+/* PRIVACIDAD */
+.privacy-content{
+    max-width: 800px;
+    margin: 0 auto;
+    background: rgba(255,255,255,0.05);
+    border-left: 5px solid #ffd166;
+    border-radius: 8px;
+    padding: 30px;
+    line-height: 1.6;
+}
+
+.privacy-content h3{
+    color: #ffd166;
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+.privacy-content h3:first-child{
+    margin-top: 0;
+}
+
+.privacy-content p{
+    margin-bottom: 10px;
+}
+
+.privacy-content a{
+    color: #06d6a0;
+}
+
+.privacy-update{
+    margin-top: 25px;
+    font-size: 0.85em;
+    color: #a8edda;
+}
+
+/* BANNER DE COOKIES */
+.cookie-banner{
+    position: fixed;
+    bottom: -200px;
+    left: 0;
+    width: 100%;
+    background: #050d1a;
+    border-top: 2px solid #ffd166;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    z-index: 2000;
+    transition: bottom 0.4s ease;
+    box-shadow: 0 -4px 15px rgba(0,0,0,0.4);
+}
+
+.cookie-banner.show{
+    bottom: 0;
+}
+
+.cookie-banner p{
+    flex: 1;
+    min-width: 250px;
+    font-size: 0.9em;
+    color: #f8f9fa;
+    margin: 0;
+}
+
+.cookie-banner a{
+    color: #ffd166;
+    text-decoration: underline;
+}
+
+.cookie-buttons{
+    display: flex;
+    gap: 10px;
+}
+
+.cookie-btn{
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    border: 2px solid transparent;
+}
+
+.cookie-btn-accept{
+    background: #06d6a0;
+    color: #0a1628;
+}
+
+.cookie-btn-accept:hover{
+    background: #a8edda;
+}
+
+.cookie-btn-reject{
+    background: transparent;
+    border: 2px solid #f8f9fa;
+    color: #f8f9fa;
+}
+
+.cookie-btn-reject:hover{
+    background: rgba(255,255,255,0.1);
+}
+
+@media (max-width: 600px){
+    .cookie-banner{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .cookie-buttons{
+        width: 100%;
+    }
+
+    .cookie-btn{
+        flex: 1;
+    }
+}
