@@ -282,6 +282,83 @@
         </ul>
     </div>
 </article>
+ 
+<!-- ============================================ -->
+<!-- ARTÍCULO 1: Standup Pulse / IA local en Slack -->
+<!-- ============================================ -->
+
+<article class="blog-card">
+    <div class="autor">
+        <img src="carlos-villanueva-ramos.jpg" alt="Carlos Villanueva Ramos escribiendo" class="autor-foto">
+        <div>
+            <p class="autor-nombre">Carlos José Villanueva Ramos</p>
+            <p class="autor-fecha">📅 14 de septiembre 2026</p>
+        </div>
+    </div>
+    <h3>🤖 Un bot de IA que corre en tu propia máquina: el experimento Standup Pulse</h3>
+    <img src="Building-a-local-first-AI-Standup-for-Slack-Soverius.png" alt="Standup Pulse para Slack, bot de IA local" class="blog-img">
+    <p>Cuando un equipo de programadores trabaja repartido en distintos países, cada mañana hacen lo que se llama una "reunión diaria": cada quien cuenta qué hizo ayer, qué va a hacer hoy y si algo lo tiene trabado. Si el equipo está en husos horarios distintos, esa reunión se vuelve imposible de coordinar en vivo, así que se hace por escrito en un chat como Slack.</p>
+    <p>Murat Sari construyó <strong>Standup Pulse</strong>, un bot que automatiza justamente eso, pero con una particularidad interesante: la mayor parte del sistema corre en su propia computadora, no en la nube de una empresa.</p>
+    <p>¿Cómo funciona? Un compañero menciona al bot en Slack y escribe su reporte del día. El bot lo lee, entiende el texto, lo guarda ordenado en una base de datos local, y responde con una tarjeta de confirmación. Además, hay un panel de control donde se ve quién reportó, quién falta y qué obstáculos hay en el equipo.</p>
+    <p>Lo llamativo del proyecto es el concepto de <strong>"local-first"</strong> (primero local): el modelo de inteligencia artificial que interpreta los mensajes corre en la máquina del autor, igual que los datos y el panel. Slack sigue guardando las conversaciones, y un servicio intermedio se encarga de llevar y traer los mensajes, pero la parte sensible —la información del equipo y el procesamiento del lenguaje— nunca sale de su computadora.</p>
+    <p>El autor es transparente en algo importante: el proyecto es "local primero", pero <em>no completamente local</em>. Y también deja claro un detalle de seguridad bien pensado: el modelo de IA nunca decide quién sos vos. Esa identidad la entrega Slack de forma verificada, así que el modelo no puede registrar un reporte a nombre de otra persona aunque se equivoque interpretando el mensaje.</p>
+    <p><strong>Mi análisis:</strong> Lo que más me llamó la atención de este proyecto es que no se trata de "la IA lo hace todo", sino de darle a la IA una tarea muy específica (entender el texto) y dejar que el código normal se encargue de las decisiones importantes: quién es cada persona, qué fecha es, si el dato ya se guardó antes. Esa separación entre "lo que el modelo interpreta" y "lo que el sistema decide" me parece una lección valiosa para cualquiera que esté empezando a integrar IA en sus proyectos.</p>
+    <p><strong><em>Fuente: Murat Sari, revisado por Rainer Hahnekamp (17 de agosto de 2026)</em></strong></p>
+</article>
+
+
+<!-- ============================================ -->
+<!-- ARTÍCULO 2: MySQL 26.7 y la comunidad -->
+<!-- ============================================ -->
+
+<article class="blog-card">
+    <div class="autor">
+        <img src="carlos-villanueva-ramos.jpg" alt="Carlos Villanueva Ramos escribiendo" class="autor-foto">
+        <div>
+            <p class="autor-nombre">Carlos José Villanueva Ramos</p>
+            <p class="autor-fecha">📅 14 de septiembre 2026</p>
+        </div>
+    </div>
+    <h3>🐬 MySQL 26.7: cuando la comunidad empuja y se nota en los números</h3>
+    <img src="mysql-oracle.jpg" alt="Logo de Oracle MySQL" class="blog-img">
+    <p>MySQL es una de las bases de datos más usadas del mundo — si alguna vez vas a guardar usuarios, productos o publicaciones en un proyecto web, es muy probable que termines cruzándote con ella. Y algo interesante de MySQL es que, aunque pertenece a Oracle, cualquier programador de la comunidad puede aportar mejoras al código.</p>
+    <p>Scott Stroz, defensor de desarrolladores de MySQL, publicó las cifras de participación de la comunidad en la versión 26.7, y los números muestran un salto importante.</p>
+    <p><strong>Las contribuciones se dispararon:</strong> la versión 26.7 recibió 43 aportes de la comunidad, contra apenas 11 de la versión anterior. Es casi cuatro veces más, y más del doble del mejor registro previo.</p>
+    <p><strong>Más gente distinta participando:</strong> no fue una sola persona haciendo mucho. Hubo 18 colaboradores únicos (contra 13 antes), y de esos, 9 eran completamente nuevos en el proyecto.</p>
+    <p><strong>Actividad de errores:</strong> desde enero de 2025 se reportaron 1653 errores, de los cuales 858 ya fueron resueltos. Entre finales de julio y principios de septiembre se sumaron 76 reportes nuevos y 39 soluciones.</p>
+    <p><strong>Interés en la versión nueva:</strong> en apenas dos días, MySQL 26.7 registró casi 35.000 descargas.</p>
+    <p>El artículo destaca algo que me parece clave: cada persona que reporta un error está, en la práctica, ayudando a mejorar el producto para todos los demás. No hace falta ser un experto que reescribe el motor de la base de datos — reportar que algo no funciona en tu entorno específico ya es una contribución real.</p>
+    <p><strong>Mi análisis:</strong> Esta noticia me dejó pensando en algo. Uno suele ver el software como algo terminado que simplemente descargás y usás, pero detrás hay gente común aportando correcciones. Que 9 personas nuevas se hayan sumado en una sola versión significa que la puerta de entrada al código abierto sigue abierta. Es un recordatorio de que en algún momento, cuando tenga más experiencia, contribuir a un proyecto así es algo totalmente alcanzable y no reservado solo para programadores de élite.</p>
+    <p><strong><em>Fuente: Scott Stroz, The Oracle MySQL Blog (4 de septiembre de 2026)</em></strong></p>
+</article>
+
+
+<!-- ============================================ -->
+<!-- ARTÍCULO 3: Windows 365 para desarrolladores -->
+<!-- ============================================ -->
+
+<article class="blog-card">
+    <div class="autor">
+        <img src="carlos-villanueva-ramos.jpg" alt="Carlos Villanueva Ramos escribiendo" class="autor-foto">
+        <div>
+            <p class="autor-nombre">Carlos José Villanueva Ramos</p>
+            <p class="autor-fecha">📅 14 de septiembre 2026</p>
+        </div>
+    </div>
+    <h3>💻 Windows 365: programar desde una computadora que vive en la nube</h3>
+    <img src="WIndows-365-logo.jpeg" alt="Logo de Windows 365" class="blog-img">
+    <p>Cualquiera que haya intentado configurar un entorno de programación desde cero sabe lo que duele: instalar el editor, el lenguaje, las librerías, resolver que una versión no coincide con otra, y descubrir que en la computadora del compañero funciona pero en la tuya no. Phil Gerity plantea que ese tiempo perdido en configurar máquinas es justamente lo que Windows 365 busca eliminar.</p>
+    <p>La idea de fondo es una <strong>"PC en la nube"</strong>: en vez de que todo tu entorno de trabajo viva en tu computadora física, vive en un servidor de Microsoft al que accedés desde una aplicación o directamente desde el navegador. Tu código, tus configuraciones y el estado de tus proyectos quedan ahí, disponibles desde cualquier dispositivo.</p>
+    <p>El artículo señala cinco puntos donde esto ayuda al desarrollo moderno:</p>
+    <p><strong>1. Entorno listo desde el primer día:</strong> la máquina se puede preparar con las herramientas y configuraciones ya instaladas antes de que el programador inicie sesión por primera vez.</p>
+    <p><strong>2. Potencia ajustable e IA local:</strong> se puede elegir cuánta capacidad de procesamiento necesita cada proyecto, y hasta correr modelos de lenguaje directamente en esa máquina virtual.</p>
+    <p><strong>3. Control de agentes de IA:</strong> como cada vez más programadores usan agentes automáticos que escriben código y ejecutan tareas solos, el sistema permite aislarlos para que su actividad quede contenida.</p>
+    <p><strong>4. Entornos dedicados para agentes empresariales:</strong> máquinas separadas donde los agentes de IA pueden trabajar sin depender del equipo personal de nadie.</p>
+    <p><strong>5. Proteger el trabajo sensible:</strong> controles que limitan, por ejemplo, qué se puede copiar y pegar o qué dispositivos se pueden conectar, según las condiciones de seguridad de la empresa.</p>
+    <p>El artículo aclara algo importante: esto no reemplaza a la computadora local. Los equipos físicos siguen siendo necesarios cuando se requiere acceso directo al hardware o trabajar sin conexión. La propuesta es que cada programador pueda elegir el entorno que mejor le sirva para cada tarea.</p>
+    <p><strong>Mi análisis:</strong> Como alguien que trabaja desde su propia computadora en Cartago, este tipo de noticias me muestra una realidad de las empresas grandes que todavía me queda lejos — pero el problema de fondo lo entiendo perfectamente: el tiempo que se pierde configurando en vez de programando. Y me deja una reflexión: si algún día trabajo para una empresa fuera del país, es muy posible que ni siquiera necesite una computadora potentísima, porque el entorno de trabajo va a estar en la nube. Eso abre puertas para gente de países como el nuestro.</p>
+    <p><strong><em>Fuente: Phil Gerity, Microsoft (Blog de Windows)</em></strong></p>
+</article>
 
        </div>
       </div>
